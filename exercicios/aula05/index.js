@@ -25,7 +25,13 @@ export function calcularDesconto(preco, percentual) {
 
 // Exercício 3 — verificarAprovacao
 export function verificarAprovacao(nota) {
-  // escreva seu código aqui
+  if (nota >= 7) {
+    return "Aprovado";
+  } else if (nota >= 5) {
+    return "Recuperação";
+  } else {
+    return "Reprovado";
+  }
 }
 
 // Exercício 4 — somarPares
