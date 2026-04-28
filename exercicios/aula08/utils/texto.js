@@ -3,5 +3,10 @@
 // ========================================
 // Implemente a função e exporte com "export default".
 export default function formatarNome(nome) {
-  // escreva seu código aqui
+  if (!nome) return '';
+
+  const primeiraLetra = nome.charAt(0).toUpperCase();
+  const restante = nome.slice(1).toLowerCase();
+
+  return primeiraLetra + restante;
 }
